@@ -7,12 +7,12 @@
   </head>
   <body>
     <div>
-      <h1>Minha calculadora</h1>
+      <h1 id="titulo">Minha Calculadora</h1>
       <br />
 
       <div>
         <label for="num1">Digite o primeiro número</label>
-        <input type="text" name="numero1" id="num1" />
+        <input type="text" name="numero1" id="num1" value="digite aqui" />
       </div>
       <br />
       <div>
@@ -27,10 +27,14 @@
         <option value="*">Multiplicar</option>
         <option value="/">Dividir</option>
       </select>
-      <button>Calcular</button>
+      <button id="btnCalcular" onclick="trocarTituloDaCalculadora()">
+        Calcular
+      </button>
       <br />
       <br />
-      <div>Resultado: 22</div>
+      <div id="resultado">Resultado: 22</div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
